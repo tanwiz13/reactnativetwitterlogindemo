@@ -31,6 +31,7 @@ export default class TwitterButton extends Component {
         const { authToken, authTokenSecret } = loginData
         if (authToken && authTokenSecret) {
           console.log("<<<<<login data<<<<<",authToken, authTokenSecret)
+          alert(authToken+"======="+ authTokenSecret)
         //   this.setState({isLoading:true})
           // let response = await requestAccessToken(HTTP_METHOD, "https://api.twitter.com/1.1/search/tweets.json?count=100&result_type=recent&q="+this.props.store.hashtag_key,authToken,authTokenSecret);
           // let twitterData = {
